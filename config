@@ -148,4 +148,4 @@ exec --no-startup-id xfsettingsd --sm-client-disable &
 exec --no-startup-id xfce4-volumed &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id nm-applet &
-exec --no-startup-id xmodmap /home/diego/.config/xmodmap
+exec --no-startup-id xmodmap ~/.config/i3/xmodmap.conf &
