@@ -49,7 +49,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+g fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -136,6 +136,12 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Program shortcuts
+# Firefox
+bindsym $mod+f exec firefox
+#Thunar
+bindsym $mod+t exec thunar
 
 # Hide hedge borders
 hide_edge_borders both
