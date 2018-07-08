@@ -164,5 +164,5 @@ exec --no-startup-id compton --config ~/.config/compton.config &
 exec --no-startup-id xfce4-volumed &
 
 # Autostart programs
-exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace $ws2; exec /usr/bin/thunderbird'
+exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/firefox'
