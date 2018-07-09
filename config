@@ -154,6 +154,9 @@ bar {
 	strip_workspace_numbers yes
 }
 
+# Wallpaper
+exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
+
 # Start daemons
 exec --no-startup-id xfsettingsd --sm-client-disable &
 exec --no-startup-id xfce4-volumed &
