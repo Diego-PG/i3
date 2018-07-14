@@ -142,6 +142,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+f exec firefox
 #Thunar
 bindsym $mod+t exec thunar
+#Shutdown
+bindsym $mod+Escape exec shutdown now 
 
 # Hide hedge borders
 hide_edge_borders both
