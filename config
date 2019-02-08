@@ -165,6 +165,7 @@ exec --no-startup-id xfce4-volumed &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id xfce4-volumed &
 exec --no-startup-id nm-applet &
+exec --no-startup-id blueman-applet &
 exec --no-startup-id xmodmap ~/.config/i3/xmodmap.conf &
 exec --no-startup-id compton --config ~/.config/compton.config &
 
