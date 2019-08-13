@@ -166,12 +166,14 @@ exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id xfce4-volumed &
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
-exec --no-startup-id xmodmap ~/.config/i3/xmodmap.conf &
-exec --no-startup-id compton --config ~/.config/compton.config --no-fading-openclose &
+#exec --no-startup-id xmodmap ~/.config/i3/xmodmap.conf &
+exec --no-startup-id compton --config ~/.config/compton.config -D5 -I 0.02 -O 0.01 -f &
+exec --no-startup-id xbindkeys &
+exec /home/diego/.config/i3/greeter_image.sh &
 
 # Autostart programs
 for_window [class="Telegram"] floating enable
-exec --no-startup-id /usr/bin/telegram-desktop -startintray
+exec --no-startup-id /snap/bin/telegram-desktop -startintray
 # In a workspace
 exec --no-startup-id i3-msg 'workspace $ws2; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/firefox'
